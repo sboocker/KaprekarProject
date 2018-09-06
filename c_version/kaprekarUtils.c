@@ -35,6 +35,7 @@ int isKaprekar(int n) {
   long first, second;
 
   //for each possible "split" of the square...
+  printf("Number of digits: %d\n",numDigits);
   for(i=1; i<=numDigits; i++) {
     //increase the modulus by a factor of 10
     modulus *= 10;
@@ -48,9 +49,9 @@ int isKaprekar(int n) {
     //test if the split makes a Kaprekar number
     if(second > 0 &&
        first + second == n) {
-      return 1;
+      return 1;//This is a Kaprekar number
     }
   }
-  return 0;
+  return 0;//This is not a Kaprekar number
 
 }
