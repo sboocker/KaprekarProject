@@ -44,8 +44,6 @@ int isKaprekar(int n) {
     first = square / modulus;
     second = square % modulus;
 
-    printf("%ld - first; %ld - second\n", first, second);
-
     //test if the split makes a Kaprekar number
     if(second > 0 &&
        first + second == n) {
