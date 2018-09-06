@@ -35,7 +35,6 @@ int isKaprekar(int n) {
   long first, second;
 
   //for each possible "split" of the square...
-  printf("Number of digits: %d\n",numDigits);
   for(i=1; i<=numDigits; i++) {
     //increase the modulus by a factor of 10
     modulus *= 10;
